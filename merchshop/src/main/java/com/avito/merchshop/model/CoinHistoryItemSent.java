@@ -5,11 +5,11 @@ import lombok.Data;
 
 @Data
 public class CoinHistoryItemSent {
-    private String toUser;
-    private Integer amount;
+  private String toUser;
+  private Integer amount;
 
-    public CoinHistoryItemSent(Transaction transaction) {
-        this.toUser = transaction.getReceiver();
-        this.amount = transaction.getAmount();
-    }
+  public CoinHistoryItemSent(Transaction transaction) {
+    this.toUser = transaction.getReceiver();
+    this.amount = transaction.getAmount();
+  }
 }

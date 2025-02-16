@@ -12,15 +12,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface UserService {
-    @NotNull
-    ResponseEntity<GetInfoResponse> getInfo(@NotNull String token);
+  @NotNull
+  ResponseEntity<GetInfoResponse> getInfo(@NotNull String token);
 
-    @NotNull
-    ResponseEntity<SendCoinResponse> sendCoin(@NotNull SendCoinRequest sendCoinRequest,@NotNull String token);
+  @NotNull
+  ResponseEntity<SendCoinResponse> sendCoin(
+      @NotNull SendCoinRequest sendCoinRequest, @NotNull String token);
 
-    @NotNull
-    ResponseEntity<BuyItemResponse> buyItem(@NotNull String itemName,@NotNull String token);
+  @NotNull
+  ResponseEntity<BuyItemResponse> buyItem(@NotNull String itemName, @NotNull String token);
 
-    @NotNull
-    ResponseEntity<AuthResponse> authUser(@NotNull AuthRequest authRequest);
+  @NotNull
+  ResponseEntity<AuthResponse> authUser(@NotNull AuthRequest authRequest);
 }

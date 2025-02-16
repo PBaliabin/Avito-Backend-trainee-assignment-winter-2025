@@ -1,12 +1,10 @@
 package com.avito.merchshop.model;
 
-import lombok.Data;
-import lombok.experimental.Accessors;
-
 import java.util.List;
+import lombok.Data;
 
 @Data
 public class CoinHistoryResponse {
-    private List<CoinHistoryItemReceived> received;
-    private List<CoinHistoryItemSent> sent;
+  private List<CoinHistoryItemReceived> received;
+  private List<CoinHistoryItemSent> sent;
 }
